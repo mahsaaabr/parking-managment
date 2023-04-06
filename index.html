@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Parking management</title>
+</head>
+<body>
+    <header>
+        <div class="title-page">
+            <div>
+                <h2>Parking Lot Management App</h2>
+            </div>
+        </div>
+    </header>
+    <div class="form-container">
+    <form class="entry-form">
+        <div class="entire-form">
+            <div class="form-title">
+                <h3>Add Car to Parking Lot</h3>
+            </div>
+            <div class="form-group">
+                <label for="owner">Owner:</label><br>
+                <input type="text" id="owner" placeholder="Owner">
+            </div>
+            <div class="form-group">
+                <label for="car">Car:</label><br>
+                <input type="text" id="car" placeholder="Car">
+            </div>
+            <div class="form-group">
+                <label for="licensePlate">License Plate:</label><br>
+                <input type="text" id="licensePlate" placeholder="NN-NN-LL,NN-LL-NN,...etc">
+            </div>
+            <div class="date-entry">
+                    <div class="date">
+                        <label for="entryDate">Entry Date:</label><br>
+                        <input type="date" id="entryDate" placeholder="mm/dd/yyyy">
+                    </div>
+                    <div class="date">
+                        <label for="exitDate">Exit Date:</label><br>
+                        <input type="date" id="exitDate" placeholder="mm/dd/yyyy">
+                    </div>
+            </div>
+            <div class="form-btn">
+                <button id="btnOne">Add Car</button>
+            </div>
+        </div>
+    </form>
+    </div>
+    <div class="table-form">
+        <h3>List of Cars in Parking Lot</h3>
+        <input type="text" name="" id="searchInput" placeholder="Search...">
+        <table style="width:60%">
+            <thead id="table-head">
+                <tr>
+                    <th>Owner</th>
+                    <th>Car</th>
+                    <th>License Plate</th>
+                    <th>Entry Date</th>
+                    <th>Exit Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
